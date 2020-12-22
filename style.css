@@ -177,9 +177,9 @@ header {
 .contact-form {
     height: 300px;
     width: 100%;
-    max-width: 500px;
+    max-width: 1000px;
     padding: 40px;
-    margin: auto;
+    /* margin: auto; */
 }
 
 .contact-form .form-control{
@@ -204,7 +204,7 @@ header {
 
 footer {
     background-color: var(--primary-color);
-    color: #e30d18;
+    color: white;
     height: 120px;
     text-align: center;
 }
@@ -213,8 +213,8 @@ footer {
     padding: 2px;
 }
 
-p {
-    margin: 10px 0;
+i {
+    color: white;
 }
 
 .address p {
@@ -227,6 +227,7 @@ p {
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
+    color: #e30d18;
 }
 
 /* All around the website */
@@ -302,7 +303,8 @@ p {
 @media (max-width: 768px) {
     
     .grid,
-    .new .grid {
+    .new .grid,
+    #about .grid {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
@@ -328,4 +330,12 @@ p {
     .navbar ul {
         padding: 10px;
         background-color: rgba(255,255,255, 0.3);
+    }
+
+    li {
+        font-size: 0.8em;
+    }
+
+    #about img {
+        display:none;
     }

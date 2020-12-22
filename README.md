@@ -4,7 +4,6 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [IDE](#ide)
-* [Setup](#setup)
 * [Demo](#demo)
 * [Sources](#sources)
 
@@ -23,7 +22,7 @@ Project created on:
 ## Demo
 Visit my demo website: https://dawid-to.github.io/coderscamp2020-dzial-1.
 
-## Demo
+## Sources
 * Icons - https://fontawesome.com/
 * Font - own source
 * Photos & logo - own source

@@ -162,11 +162,15 @@ header {
 }
        
 .waffle-image:hover{
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
+    transform: scale(1.2);
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+    -webkit-transform: scale(1.2);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1.2);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
 }
 
 /* Styles for "Menu" section */

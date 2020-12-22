@@ -1,110 +1,112 @@
-/* some basic variables */
-
-:root {
-    --mainfontcolor: #dbdbdb;
-    --mainbgcolor: rgba(41, 0, 0, 0.192);
-    --hoverbgcolor: rgba(75, 75, 75, 0.712);
-    --hoverfontcolor: #e7e6e6;
+@font-face {
+    font-family: Walsheim;
+    src: url(fonts/Walsheim.ttf) format("truetype");
 }
 
-
-/* Font, box sizing and smooth scroll */
+* {
+    box-sizing: border-box;
+    font-family: Walsheim, sans-serif;
+}
 
 html {
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    color: var(--mainfontcolor);
     scroll-behavior: smooth;
     font-size: calc(1em + 1vw);
-    overflow-x: hidden;
 }
-
-
-/* For cool background */
 
 body {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/bg.jpg) no-repeat center center fixed;
-    line-height: 1.4;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    margin: 0;
+    padding: 0;
 }
-
-.grid-container {
-    max-width: 100wh;
-}
-
-
-/* nav bar styling */
-
-.nav-bar {
-    animation: 1s ease-out navIn;
-    position: sticky;
-    top: 1.5em;
-    grid-area: nav;
+    
+.navbar {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 100vw;
-    font-size: 0.5em;
-    background: rgb(46, 46, 46);
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    color: #e30d18;
 }
 
-.about {
-    grid-area: about;
+.brand-logo {
+    width: 4.0em;
+    margin: 0.5em;
+    float: left;
+}
+
+.navbar-links ul {
+    float: right;
+    margin: 0.5em;
+    padding: 0;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-content: center;
 }
 
-.beginning {
-    grid-area: skills;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+.navbar-links li {
+    list-style: none;
 }
 
-.menu {
-    grid-area: projects;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+.navbar-links li a {
+    text-decoration: none;
+    color: #e30d18;
+    padding: 0.5em 0.6em;
+    display: block;
+    text-transform : lowercase;
+    width: 6em;
+    text-align: center;
 }
 
-.contact {
-    grid-area: contact;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+.navbar-links li:hover {
+    background-color: #e30d18;
+    transition: .5s;
 }
 
-.about,
-.beginning,
-.menu,
-.contact {
-    padding: 0.34em;
-}
-
-.nav {
-    color: var(--mainfontcolor);
-    transition: 0.3s;
-}
-
-.nav a:hover {
+.navbar-links li a:hover {
     color: white;
-    transform: scale(1.05);
+    transition: .3s;
 }
 
+/* @media (max-width: 200px) {
+    .toggle-button {
+        display: flex;
+    }
 
-/* rest of the site styling */
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links:active {
+        display: flex;
+    }
+} */
 
 .main {
     grid-area: main;
     display: grid;
-    grid-template-areas: 'helloa' 'abouta' 'skillsa' 'projectsa' 'contacta';
-    grid-gap: 10px;
+    grid-template-areas: 'home' 'about-us' 'menu' 'contact';
+    grid-gap: 50px;
     text-align: center;
     justify-items: center;
 }
@@ -117,9 +119,9 @@ p {
     font-size: 1em;
 }
 
-.hello {
-    animation: 1s ease-out helloIn;
-    grid-area: helloa;
+.home {
+    animation: 1s ease-out home;
+    grid-area: home;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -129,8 +131,7 @@ p {
     max-width: 100vw;
 }
 
-.about,
-.beginning,
+.about-us,
 .menu {
     grid-area: abouta;
     display: flex;
@@ -139,11 +140,6 @@ p {
     justify-content: center;
     margin-top: 10%;
     min-height: 90vh;
-    max-width: 100vw;
-}
-
-.menu {
-    grid-area: skillsa;
     max-width: 100vw;
 }
 

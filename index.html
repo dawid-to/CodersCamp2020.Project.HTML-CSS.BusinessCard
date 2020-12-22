@@ -4,65 +4,141 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>gofreak BusinessCard</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0; minimum-scale=1.0">
     <meta name="description" content="Wizytówka kawiarni we Wrocławiu">
     <meta name="keywords" content="portfolio, businesscard, resume, project">
+    <title>gofreak | Home</title>
+    <!-- Ion Icons -->
+    <script src="https://kit.fontawesome.com/c3defefc5c.js" crossorigin="anonymous"></script>
+    <!-- My stylesheet -->
     <link href="style.css" rel="stylesheet">
-
+    
 </head>
 
 <body>
-    <nav class="navbar">
-        <img class="brand-logo" src="img/logo.png" alt="gofreak">
-        <div class="navbar-links">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about-us">About us</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+
+    <header>
         
-    <main class="main">
-            <div class="home">
-                <h3>Hello, we are gofreak!</h3>
-                <p>Sweet and savoury waffles in the center of Wroclaw!</p>
-            </div>
-            <div class="about-us" id="about-us">
-                <h3></h3>
-                <p></p>
-            </div>
-            <div class="menu" id='menu'>
-                <h3>Some of our waffles</h3>
-                <p></p>
-            </div>
-            <div class="contact" id="contact">
-                <h3>Contact us or place an order</h3>
-                <p>Call or e-mail us directly:</p>
-                <p>phone: +48 781 902 131</p>
-                <p>e-mail: gofreakfoodtruck@gmail.com</p>
-                <p>Or use our form and place your order below:</p>
-                <form method="post" enctype="text/plain">
-                    Name:
-                    <br><input type="text" name="name" size="25" id='input'><br>
-                    e-mail:
-                    <br><input type="text" name="mail" size="25" id='input'><br>
-                    Address:
-                    <br><input type="text" name="address" size="25" id='input'><br>
-                    Your order:
-                    <br><input type="text" name="comment" size="25" id='input'><br>
-                    <br>
-                    <input type="submit" value="Send" id='button'>
-                    <input type="reset" value="Reset" id='button'>
-                </form>
+        <div class="navbar">
+            <div class="container flex">
+                <h1 class="nav-brand">gofreak</h1>
+                <nav>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">O nas</a>
+                        </li>
+                        <li>
+                            <a href="#new" class="nav-link">Nowości</a>
+                        </li>
+                        <li>
+                            <a href="#menu" class="nav-link">menu</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="nav-link">kontakt</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
-    </main>
+
+    </header>    
+
+    <section id="about">
+        <div class="container grid">
+            <div class="about-text">
+                <h1>Gofiarnia we Wrocławiu</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, dolorum, corporis aspernatur quidem provident minus soluta vitae accusamus eos dolore...</p>
+                <a href="https://www.ubereats.com/pl/wroclaw/food-delivery/gofreak/nNrvpEnUTMqOBwcOLOcSlw" target="_blank" class="btn btn-outline">Zamów teraz</a>
+            </div>
+            <img src="img/logo.png" alt="gofreak">
+        </div>
+    </section>
+
+    <section id="new">
+        <div class="container">
+            <h2 class="new-heading">Nowości w menu</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, dolorum, corporis aspernatur quidem provident minus soluta vitae accusamus eos dolore...</p>
+            <div class="grid grid-3 text-center">
+                <div>
+                    <img src="img/waffle1.jpeg" alt="gofreak" class="waffle-image">
+                    <h3>BIAŁA CZEKOLADA</h3>
+                    <p>z owocami, miętą i kokosem</p>
+                </div>
+                <div>
+                    <img src="img/waffle2.jpeg" alt="gofreak" class="waffle-image">
+                    <h3>KREM CHAŁWOWY</h3>
+                    <p>z borówką, bazylią i sezamem</p>
+                </div>
+                <div>
+                    <img src="img/waffle3.jpeg" alt="gofreak" class="waffle-image">
+                    <h3>SOLONY KAJMAK</h3>
+                    <p>z bananem i orzeszkami</p>
+                </div>
+                <div>
+                    <img src="img/waffle4.jpeg" alt="gofreak" class="waffle-image">
+                    <h3>KURCZAK CURRY</h3>
+                    <p>z roszponką, pieczoną marchewką</p>
+                </div>
+                <div>
+                    <img src="img/waffle5.jpeg" alt="gofreak" class="waffle-image">
+                    <h3>DOMOWY HUMMUS</h3>
+                    <p>z suszonymi i świeżymi pomidorami </p>
+                </div>
+                <div>
+                    <img src="img/waffle6.jpeg" alt="gofreak" class="waffle-image">
+                    <h3>PIECZONY BURAK</h3>
+                    <p>na kremowym serku z fetą</p>
+                </div>
+            </div>
+        </div>
+    </section>
     
-    <footer class='footer'>
-        Copyright &copy; 2020 gofreak. All rights reserved.
+    <section id="menu">
+        <div class="container">
+            <div class="text-center">
+                <h2>Nasze menu</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, dolorum, corporis aspernatur quidem provident minus soluta vitae accusamus eos dolore..</p>
+                <a href="https://www.facebook.com/pg/gofreakfoodtruck/menu/?ref=page_internal" target="_blank" class="btn">Przejdź</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-form card">
+            <h2>Skontaktuj się z nami</h2>
+        <form>
+            <div class="form-control">
+                <input type="text" name="name" placeholder="Imię i nazwisko" required>
+            </div>
+            <div class="form-control">
+                <input type="email" name="email" placeholder="Adres e-mail" required>
+            </div>
+            <div class="form-control">
+                <input type="phone" name="phone" placeholder="Telefon kontaktowy" required>
+            </div>    
+            <input type="submit" value="Wyślij" class="btn">
+        </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container2">
+            <div class="social-media">
+                <a href="https://www.facebook.com/gofreakfoodtruck/" target="_blank">
+                    <i class="fab fa-facebook-square fa-4x"></i>
+                </a>
+                <a href="https://www.instagram.com/gofreakfoodtruck/" target="_blank">
+                    <i class="fab fa-instagram-square fa-4x"></i>
+                </a>
+            </div>
+            <div class="address">
+                <p>św. Antoniego 27-29</p>
+                <p>50-073 Wrocław</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; 2020 gofreak. All rights reserved.</p>
+    </div>
     </footer>
 
 </body>

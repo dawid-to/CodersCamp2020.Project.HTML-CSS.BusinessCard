@@ -29,7 +29,7 @@ a {
 }
 
 h1,
-h2, {
+h2 {
     font-weight: 300;
     line-height: 1.2;
     margin: 10px 0;
@@ -100,7 +100,7 @@ header {
 
 #about .grid {
     overflow: visible;
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 70% 30%;
     gap: 30px;
 }
 
@@ -115,6 +115,14 @@ header {
     background: #fff;
     transform: skewY(-2deg);
 }
+
+#about img {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* Styles for "New" section */
 #new {
@@ -146,7 +154,6 @@ header {
 
 .waffle-image{
     border: 1px #e30d18 solid;
-    height: ;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -266,10 +273,10 @@ i {
     transform: scale(1.05,0.88);
     transition-duration: 250ms;
     transition-timing-function: ease-in-out;
-    -webkit-transform: scale(1.05,0.88));
+    -webkit-transform: scale(1.05,0.88);
     -webkit-transition-timing-function: ease-out;
     -webkit-transition-duration: 250ms;
-    -moz-transform: scale(1.05,0.88));
+    -moz-transform: scale(1.05,0.88);
     -moz-transition-timing-function: ease-out;
     -moz-transition-duration: 250ms;
 }
@@ -337,5 +344,6 @@ i {
     }
 
     #about img {
-        display:none;
+        display: none;
     }
+}
